@@ -1,0 +1,10 @@
+@media screen and (max-width: 8192px)
+<style>
+.container-one {
+    margin: 0px auto
+}
+@media screen and (max-width: 1279px)
+.first{
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+}
