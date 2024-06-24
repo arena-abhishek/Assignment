@@ -4,10 +4,12 @@
   box-sizing: border-box;
   text-transform: capitalize;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 :root {
   --bg: hsl(225, 17%, 23%);
   --text-bg: hsl(7, 99%, 63%);
@@ -27,10 +29,14 @@ a {
   --c5a: hsla(282, 40%, 53%, 0.3);
   --c5b: hsla(282, 40%, 53%, 0.5);
 }
-h3{
-    font-size: 20px;
-    font-weight: 200;
+
+h3 {
+  font-size: 20px;
+  font-weight: 200;
+  text-wrap: wrap;
+  /* white-space: nowrap; */
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(225, 17%, 23%);
@@ -39,6 +45,7 @@ body {
   padding: 18px;
   max-width: 1240px;
 }
+
 header {
   width: 100%;
   padding: 10px;
@@ -46,17 +53,19 @@ header {
   border-bottom: 1px solid grey;
   display: flex;
 }
+
 /* nav {
   display: flex;
   align-items: center;
   justify-content: center;
   position: sticky;
 } */
-nav > div {
+nav>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 img {
   height: 65px;
   width: 65px;
@@ -64,6 +73,7 @@ img {
   object-fit: cover;
   overflow: hidden;
 }
+
 ul {
   text-decoration: none;
   display: flex;
@@ -72,33 +82,40 @@ ul {
   gap: 30px;
   margin-left: 600px;
 }
+
 li {
   list-style: none;
   font-size: 25px;
   font-weight: 300;
   padding: 8px 12px;
 }
+
 li:hover {
   cursor: pointer;
   color: yellow;
   background-color: rgba(255, 255, 255, 0.637);
   border-radius: 5px;
 }
+
 section {
   display: grid;
   width: 100%;
   /* background-color: rgb(255, 255, 255); */
   margin-block: 48px;
 }
+
 .container-one {
   margin: 0px auto;
   max-width: 1280px;
   width: 100%;
 }
+
 .inner-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .headline {
   margin: 0% auto;
   width: max-content;
@@ -106,8 +123,9 @@ section {
   padding: 15px;
   border-bottom: 1px solid white;
 }
-.headline > h1 {
-}
+
+.headline>h1 {}
+
 main {
   margin-top: 100px;
   height: max-content;
@@ -116,24 +134,29 @@ main {
   gap: 80px;
   justify-content: center;
 }
+
 main>div {
-  width: max-content;
+  width: auto;
 }
+
 .option {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 input {
   margin: 10px;
 }
+
 input[type="radio"] {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
+
 label {
   --idleC: white;
   --hoverC: white;
@@ -145,6 +168,7 @@ label {
   position: relative;
   user-select: none
 }
+
 label::before,
 label::after {
   content: "";
@@ -177,34 +201,120 @@ label:hover::before {
 }
 
 /* Select only first label before input  */
-input:checked + label::after {
+input:checked+label::after {
   display: inline-block;
 }
 
-input:checked + label::before {
+input:checked+label::before {
   background-color: var(--tickC);
 }
+
 .radio1 {
-    --idleC: var(--c4a);
-    --hoverC: var(--c4b);
-    --tickC: var(--c4);
+  --idleC: var(--c4a);
+  --hoverC: var(--c4b);
+  --tickC: var(--c4);
+}
+
+input:checked+.radio1::after {
+  display: inline-block;
+  transform-origin: top left;
+  left: -0.9em;
+  animation: slide 0.2s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-0.5em, 0.5em);
   }
-input:checked + .radio1::after {
-    display: inline-block;
-    transform-origin: top left;
-    left: -0.9em;
-    animation: slide 0.2s ease-in-out;
+
+  50% {
+    opacity: 0;
   }
-  
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-0.5em, 0.5em);
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      transform: rotate(45deg) translate(0em, 0em);
-    }
+
+  100% {
+    transform: rotate(45deg) translate(0em, 0em);
   }
+}
+
+.btn {
+  background-color: #23b8a7;
+  border: 2px solid #23b8a7;
+  width: fit-content;
+
+}
+
+.btn- {
+  outline: none;
+  /* border: none; */
+  cursor: pointer;
+  padding: 20px 60px;
+  --font-size: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+button::after,
+button::before {
+  transition: all 0.2s ease-in-out
+}
+
+#q1::before,
+#q2::before,
+#q3::before,
+#q4::before,
+#q5::before {
+  position: absolute;
+  margin-left: -20px;
+}
+
+#q1::before {
+  content: "1.";
+}
+
+#q2::before {
+  content: "2.";
+}
+
+#q3::before {
+  content: "3.";
+}
+
+#q4::before {
+  content: "4.";
+}
+
+#q5::before {
+  content: "5.";
+}
+
+/* #q1::before {
+  content: "1.";
+  position: absolute;
+  margin-left: -20px;
+}
+#q2::before {
+  content: "2.";
+  position: absolute;
+  margin-left: -20px;
+}
+#q3::before {
+  content: "3.";
+  position: absolute;
+  margin-left: -20px;
+}
+#q4::before {
+  content: "4.";
+  position: absolute;
+  margin-left: -20px;
+}
+#q5::before {
+  content: "5.";
+  position: absolute;
+  margin-left: -20px;
+} */
