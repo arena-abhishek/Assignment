@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indoor plantation</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
+   
+    <style>
+        html{
+          background: #e0dad0;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-light w-100  pt-5 pb-5">
+        <div class="container-xxl">
+          <!-- navbar brand / title  -->
+          <a href="#intro" class="navabar-brand">
+            <span class="md-text-center justify-content-center" style="font-size: 50px;"><i class="bi bi-tree"></i></span>
+          </a>
+
+          <!-- offcanvas button -->
+          
+
+          <button class="navbar-toggler offcanvas-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#sidebar"  type="button">
+            <i class="bi bi-list"></i> 
+          </button>
+       
+        <!-- <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas"
+        role="button" aria-controls="sidebar">
+        <i class="bi bi-list"></i> 
+      </a> -->
+
+
+         <!-- side panel / off canvas -->
+         <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+         aria-labelledby="sidebar-label">
+         <div class="offcanvas-header">
+           <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+           <button class="btn-close" type="button" data-bs-dismiss="offcanvas"
+             aria-label="close"></button>
+         </div>
+         <div class="offcanvas-body">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+             perspiciatis natus, ex et eos, consequuntur tenetur recusandae minus
+             nemo sunt atque exercitationem nam!</p>
+   
+           <!-- dropdown -->
+   
+           <div class="dropdown mt-3">
+             <button class="btn btn-secondary dropdown-toggle" type="button"
+               id="-dropdown" data-bs-toggle="dropdown">
+               choose a book title
+             </button>
+             <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+               <li><a class="dropdown-item" href="#">Become a React
+                   Superhero</a></li>
+               <li><a class="dropdown-item" href="#">Conquring value.js</a></li>
+               <li><a class="dropdown-item" href="#">Leveling up Your NExt
+                   .js</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+
+          <!-- toggle button for mobile nav  -->
+          <!--   <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggler="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+<!-- 
+          <button class="navbar-toggler" id="" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+          <!-- navbar links -->
+          <div
+            class="collapse navbar-collapse justify-content-center align-center"
+            id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a href="#plants" class="nav-link">Plants <i class="bi bi-chevron-down"></i></a>
+                </li>
+              <li class="nav-item ">
+                <a href="#seeds" class="nav-link">Seeds <i class="bi bi-chevron-down"></i></a>
+                </li>
+              <li class="nav-item ">
+                <a href="#pandp" class="nav-link">Plots & Planter <i class="bi bi-chevron-down"></i></a>
+                </li>
+              <li class="nav-item ">
+                <a href="#plantcare" class="nav-link">Plant care <i class="bi bi-chevron-down"></i></a>
+                </li>
+              <li class="nav-item ">
+                <a href="#offers" class="nav-link">Offers <i class="bi bi-chevron-down"></i></a>
+                </li>
+            </ul>
+          </div>
+
+          <!-- icons -->
+
+          <div class="list-group ">
+            <div class="list-group-item border border-0">
+              <i style="font-size: 25px; margin-left:0px ;" class="bi bi-search"></i>
+              <i style="font-size: 25px; margin-left:20px ;" class="bi bi-currency-rupee"></i>
+              <i style="font-size: 25px; margin-left:20px ;" class="bi bi-bag-plus"></i>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
