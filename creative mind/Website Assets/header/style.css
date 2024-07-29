@@ -1,0 +1,11 @@
+body{
+  background-color: #15141f;
+}
+
+@media (max-width:991px ) {
+  .sidebar{
+    background-color: #15141f;
+    backdrop-filter: blur;
+  }
+  
+}

@@ -1,0 +1,16 @@
+body{
+  background-color: #15141f;
+}
+
+/* .foter{
+  width: 100%;
+  background-color: 0f0f0f;
+}
+ */
+@media (max-width:991px ) {
+  .sidebar{
+    background-color: #15141f;
+    backdrop-filter: blur;
+  }
+  
+}
