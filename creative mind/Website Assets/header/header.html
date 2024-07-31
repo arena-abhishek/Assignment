@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="card.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Header</title>
   </head>
@@ -64,8 +66,22 @@
             class="offcanvas-body d-flex flex-column flex-lg-row align-items-start"
           >
             <ul
-              class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3 rounded "
+              class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3 rounded bg-warning"
             >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Movies">Movies</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Support">Support</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Subscription">Subscription</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-block fs-5 flex-grow-1 pe-3 rounded">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -81,10 +97,13 @@
             </ul>
             <!-- search & notification -->
             <div class="d-flex justify-content-center align-items-center gap-3">
-              <a href="#search" class="text-white" style="font-size: 25px;"
+              <a href="#search" class="text-white" style="font-size: 25px"
                 ><i class="bi bi-search"></i
               ></a>
-              <a href="#notificationIcon" class="text-white" style="font-size: 25px;"
+              <a
+                href="#notificationIcon"
+                class="text-white"
+                style="font-size: 25px"
                 ><i class="bi bi-bell"></i
               ></a>
             </div>
