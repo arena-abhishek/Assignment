@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-btn">Click me!</button>
+      <ul class="dropdown-content">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </div>
+    <style>
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-btn {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown-btn:hover {
+        background-color: #3e8e41;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        display: none; /* hide the dropdown content by default */
+        transition: all 0.3s ease-in-out; /* add transition effect */
+      }
+
+      .dropdown-content li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .dropdown-content li:last-child {
+        border-bottom: none;
+      }
+
+      .dropdown-content a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .dropdown-content a:hover {
+        color: #666;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-btn").click(function () {
+          $(this).next(".dropdown-content").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
