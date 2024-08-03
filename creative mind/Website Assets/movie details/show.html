@@ -32,6 +32,7 @@
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <link rel="stylesheet" href="style.css" />
     <style>
       html {
@@ -47,6 +48,9 @@
       li {
         list-style: none;
       }
+      .episodes {
+        /* display: none; */
+      }
     </style>
   </head>
   <body>
@@ -55,11 +59,11 @@
         <div class="row gx-5">
           <!-- 1st coulmn -->
 
-          <div class="col-12 col-md-8 mt-4">
+          <div class="col-12 col-lg-8 mt-4">
             <!-- select episodes -->
 
             <div
-              class="row rounded-3 mb-3 p-2"
+              class="row rounded-3 mb-3 px-2 px-sm-3 py-3 py-sm-4"
               style="background-color: #202020"
             >
               <div class="container">
@@ -79,21 +83,24 @@
                     </div>
                     <div class="col text-end">
                       <button
-                        class="rounded-4"
+                        class="epsBtn rounded-4"
                         style="background-color: #202020; border: none"
                       >
-                        <i class="bi bi-arrow-down" style="color: #999"></i>
+                        <i
+                          class="bi bi-arrow-down-short"
+                          style="color: #999; font-size: large"
+                        ></i>
                       </button>
                     </div>
                   </div>
-                  <div class="row m-2 border-top border-dark py-4">
+                  <div class="row episodes m-2 border-top border-dark py-4">
                     <div
-                      class="col d-flex align-items-center justify-items-center fs-1"
+                      class="col-2 col-sm-1 d-flex align-items-center justify-items-center fs-1"
                     >
                       <h6 style="color: #999">01</h6>
                     </div>
                     <div
-                      class="col d-flex align-items-center justify-items-center"
+                      class="col-10 col-sm-3 d-flex align-items-center justify-items-center text-center"
                     >
                       <img
                         src="https://picsum.photos/id/277/100/60"
@@ -130,9 +137,9 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mt-4 mt-sm-0">
                       <div class="row">
-                        <div class="col mt-2 mt-sm-0">
+                        <div class="col-12 col-sm-8">
                           <h6>Chapter One : The Vanishing of Will Byers</h6>
                         </div>
                         <div class="col text-start text-sm-end mt-2 mt-sm-0">
@@ -143,17 +150,16 @@
                           >
                         </div>
                       </div>
-                      <div class="row"></div>
                     </div>
                   </div>
-                  <div class="row m-2 border-top border-dark py-4">
+                  <div class="row episodes m-2 border-top border-dark py-4">
                     <div
-                      class="col d-flex align-items-center justify-items-center fs-1"
+                      class="col-2 col-sm-1 d-flex align-items-center justify-items-center fs-1"
                     >
                       <h6 style="color: #999">02</h6>
                     </div>
                     <div
-                      class="col d-flex align-items-center justify-items-center"
+                      class="col-10 col-sm-3 d-flex align-items-center justify-items-center text-center"
                     >
                       <img
                         src="https://picsum.photos/id/277/100/60"
@@ -190,9 +196,9 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mt-4 mt-sm-0">
                       <div class="row">
-                        <div class="col mt-2 mt-sm-0">
+                        <div class="col-12 col-sm-8">
                           <h6>Chapter One : The Vanishing of Will Byers</h6>
                         </div>
                         <div class="col text-start text-sm-end mt-2 mt-sm-0">
@@ -203,17 +209,16 @@
                           >
                         </div>
                       </div>
-                      <div class="row"></div>
                     </div>
                   </div>
-                  <div class="row m-2 border-top border-dark py-4">
+                  <div class="row episodes m-2 border-top border-dark py-4">
                     <div
-                      class="col d-flex align-items-center justify-items-center fs-1"
+                      class="col-2 col-sm-1 d-flex align-items-center justify-items-center fs-1"
                     >
                       <h6 style="color: #999">03</h6>
                     </div>
                     <div
-                      class="col d-flex align-items-center justify-items-center"
+                      class="col-10 col-sm-3 d-flex align-items-center justify-items-center text-center"
                     >
                       <img
                         src="https://picsum.photos/id/277/100/60"
@@ -250,9 +255,9 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mt-4 mt-sm-0">
                       <div class="row">
-                        <div class="col mt-2 mt-sm-0">
+                        <div class="col-12 col-sm-8">
                           <h6>Chapter One : The Vanishing of Will Byers</h6>
                         </div>
                         <div class="col text-start text-sm-end mt-2 mt-sm-0">
@@ -263,17 +268,16 @@
                           >
                         </div>
                       </div>
-                      <div class="row"></div>
                     </div>
                   </div>
-                  <div class="row m-2 border-top border-dark py-4">
+                  <div class="row episodes m-2 border-top border-dark py-4">
                     <div
-                      class="col d-flex align-items-center justify-items-center fs-1"
+                      class="col-2 col-sm-1 d-flex align-items-center justify-items-center fs-1"
                     >
                       <h6 style="color: #999">04</h6>
                     </div>
                     <div
-                      class="col d-flex align-items-center justify-items-center"
+                      class="col-10 col-sm-3 d-flex align-items-center justify-items-center text-center"
                     >
                       <img
                         src="https://picsum.photos/id/277/100/60"
@@ -310,9 +314,9 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mt-4 mt-sm-0">
                       <div class="row">
-                        <div class="col mt-2 mt-sm-0">
+                        <div class="col-12 col-sm-8">
                           <h6>Chapter One : The Vanishing of Will Byers</h6>
                         </div>
                         <div class="col text-start text-sm-end mt-2 mt-sm-0">
@@ -323,17 +327,16 @@
                           >
                         </div>
                       </div>
-                      <div class="row"></div>
                     </div>
                   </div>
-                  <div class="row m-2 border-top border-dark py-4">
+                  <div class="row episodes m-2 border-top border-dark py-4">
                     <div
-                      class="col d-flex align-items-center justify-items-center fs-1"
+                      class="col-2 col-sm-1 d-flex align-items-center justify-items-center fs-1"
                     >
                       <h6 style="color: #999">05</h6>
                     </div>
                     <div
-                      class="col d-flex align-items-center justify-items-center"
+                      class="col-10 col-sm-3 d-flex align-items-center justify-items-center text-center"
                     >
                       <img
                         src="https://picsum.photos/id/277/100/60"
@@ -370,9 +373,9 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mt-4 mt-sm-0">
                       <div class="row">
-                        <div class="col mt-2 mt-sm-0">
+                        <div class="col-12 col-sm-8">
                           <h6>Chapter One : The Vanishing of Will Byers</h6>
                         </div>
                         <div class="col text-start text-sm-end mt-2 mt-sm-0">
@@ -383,7 +386,6 @@
                           >
                         </div>
                       </div>
-                      <div class="row"></div>
                     </div>
                   </div>
                 </div>
@@ -563,9 +565,9 @@
 
           <!-- 2nd coulmn -->
 
-          <div class="col-12 col-md-4 mt-4 mt-sm-0 p-sm-4 p-3">
+          <div class="col-12 col-lg-4 mt-4 mt-sm-0 ">
             <div
-              class="row container rounded-3 mb-3 p-lg-4"
+              class="row  rounded-3 my-4 px-sm-4 px-3 py-sm-3 py-3 "
               style="background-color: #202020"
             >
               <div class="row mt-3 mb-2">
@@ -616,7 +618,7 @@
                 <h6 style="color: #999">
                   <i class="bi bi-star"></i><span class="ms-2">Ratings</span>
                 </h6>
-              </div>
+              
               <div
                 class="row text-light text-center m-1 mb-3 p-3 rounded-2"
                 style="background-color: #161616; width: 130px"
@@ -644,6 +646,7 @@
                   <span class="star">★</span>
                   <span class="ms-2">5</span>
                 </div>
+              </div>
               </div>
               <div class="row mb-3">
                 <h6 style="color: #999">

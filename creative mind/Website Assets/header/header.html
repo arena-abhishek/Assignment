@@ -23,96 +23,132 @@
     <link rel="stylesheet" href="style.css" />
     <title>Header</title>
   </head>
-
   <body class="vh-100 overflow-hidden">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container">
-        <!-- logo -->
-        <a class="navbar-brand fs-4" href="#"
-          ><img src="logo.png" alt="logo" width="110"
-        /></a>
-        <!-- toggle btn -->
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- sidebar -->
-        <div
-          class="sidebar offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <!-- sidebar header -->
-          <div class="offcanvas-header text-white border-bottom">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="logo.png" alt="logo" width="100" />
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white shadow-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div
-            class=" ms-5 offcanvas-body d-flex flex-column flex-lg-row align-items-start"
-          >
-            
-              <ul
-                class="navbar-nav fleekNav d-none d-sm-flex justify-content-center fs-5 flex-grow-1 py-1   rounded "
-                style="width: 30px;"
-              >
-                <li class="nav-item mx-2 rounded p-1 " >
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item mx-2 rounded p-1">
-                  <a class="nav-link" href="#Movies">Movies & Shows</a>
-                </li>
-                <li class="nav-item mx-2 rounded p-1">
-                  <a class="nav-link" href="#Support">Support</a>
-                </li>
-                <li class="nav-item mx-2 rounded p-1">
-                  <a class="nav-link" href="#Subscription">Subscription</a>
-                </li>
-              </ul>
-           
-            <ul
-              class="navbar-nav d-block d-sm-none fs-5 flex-grow-1 pe-3 rounded"
+      <div class="container-fluid">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <!-- logo -->
+              <a class="navbar-brand" href="#"
+                ><img src="logo.png" alt="logo" width="110"
+              /></a>
+            </div>
+            <div
+              class="col-8 d-none d-md-flex justify-items-center align-items-center flex-row"
             >
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#Movies">Movies</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#Support">Support</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#Subscription">Subscription</a>
-              </li>
-            </ul>
-            <!-- search & notification -->
-            <div class=" d-flex justify-content-end align-items-center gap-3">
-              <a href="#search" class="text-white" style="font-size: 25px"
-                ><i class="bi bi-search"></i
-              ></a>
-              <a
-                href="#notificationIcon"
-                class="text-white"
-                style="font-size: 25px"
-                ><i class="bi bi-bell"></i
-              ></a>
+            <div class="row d-none d-md-flex justify-items-center align-items-center flex-row">
+              <div class="col-6 d-md-flex justify-items-center align-items-center flex-row">
+                <ul
+                  class="navbar-nav fleekNav d-flex align-items-center justify-items-center flex-grow-1 rounded"
+                  style="width: 30px"
+                >
+                  <li class="nav-item rounded p-1">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item rounded p-1">
+                    <a class="nav-link" href="#Movies">Movies[&]Shows</a>
+                  </li>
+                  <li class="nav-item rounded p-1">
+                    <a class="nav-link" href="#Support">Support</a>
+                  </li>
+                  <li class="nav-item rounded p-1">
+                    <a class="nav-link" href="#Subscription">Subscription</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col"></div>
+            </div>
+            
+            </div>
+            <div
+              class="col-2 d-none d-md-block d-flex justify-items-center align-items-center"
+            >
+              <!-- search & notification -->
+              <div class="d-flex justify-content-end align-items-center gap-3">
+                <a href="#search" class="text-white" style="font-size: 25px"
+                  ><i class="bi bi-search"></i
+                ></a>
+                <a
+                  href="#notificationIcon"
+                  class="text-white"
+                  style="font-size: 25px"
+                  ><i class="bi bi-bell"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-lg-0 d-block d-md-none d-flex justify-content-end"
+            >
+              <!-- toggle btn -->
+              <button
+                class="navbar-toggler shadow-none border-0 d-block d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <!-- sidebar -->
+            <div
+              class="sidebar offcanvas offcanvas-start d-block d-sm-none"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- sidebar header -->
+              <div class="offcanvas-header text-white border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="logo.png" alt="logo" width="100" />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column align-items-start">
+                <ul
+                  class="navbar-nav d-block d-sm-none fs-5 flex-grow-1 pe-3 rounded"
+                >
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#Movies">Movies</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#Support">Support</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#Subscription">Subscription</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- search & notification -->
+              <!-- 
+              <div class="d-flex justify-content-end align-items-center gap-3">
+                <a href="#search" class="text-white" style="font-size: 25px"
+                  ><i class="bi bi-search"></i
+                ></a>
+                <a
+                  href="#notificationIcon"
+                  class="text-white"
+                  style="font-size: 25px"
+                  ><i class="bi bi-bell"></i
+                ></a>
+              </div>
+ -->
             </div>
           </div>
         </div>
