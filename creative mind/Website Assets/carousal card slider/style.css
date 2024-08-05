@@ -29,14 +29,6 @@ li {
 .video-play-btn {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background: #85776c54;
-  backdrop-filter: blur(20px);
-  height: 65px;
-  width: 65px;
-  cursor: pointer;
-}
-.play-icon{
-  font-size: 38px;
 }
 
 .card:hover .video-play-btn {
@@ -47,10 +39,11 @@ li {
 .details {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background: #85776c54;
-  backdrop-filter: blur(20px);
-  height: 41%;
-  margin-top: 195px;
+
+}
+
+.carousel-inner{
+  /* padding: 0 30px; */
 }
 
 .card:hover .details {
@@ -60,15 +53,11 @@ li {
 
 @keyframes slide-top {
   0% {
-    transform: translateY(20%);
+    transform: translateY(100%);
   }
   100% {
-    transform: translateY();
+    transform: translateY(0);
   }
-}
-
-.movie-title{
-  color:#fff;
 }
 
 .movie-title:hover {
@@ -81,7 +70,7 @@ li {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transition: 0.2s ease-in-out ;
+  transition: 0.3s ease-in-out ;
 }
 
 /* .card {

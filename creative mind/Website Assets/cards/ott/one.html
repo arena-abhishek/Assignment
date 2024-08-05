@@ -20,14 +20,19 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="jquery.js" defer></script>
+    <style>
+      body {
+   background-color: #15141f;
+ }
+ </style>
   </head>
   <body>
     <!-- card -->
-    <div class="card rounded-5" style="width: 500px">
+    <div class="card rounded-5 border-0" style="width: 300px">
       <img
         src="https://holaa.codexshaper.com/wp/wp-content/uploads/2024/03/trending-3.png"
         alt
-        class="card-img rounded-5" />
+        class="card-img rounded-4 border-0" />
       <!-- transition background -->
       <div class="card-hover card-img-overlay d-block rounded-5"></div>
       <!-- play button -->
@@ -39,8 +44,8 @@
           style="
             background: #85776c54;
             backdrop-filter: blur(20px);
-            height: 85px;
-            width: 85px;
+            height: 80px;
+            width: 80px;
             cursor: pointer;
           ">
           <svg
@@ -61,46 +66,42 @@
       <div
         class="card-img text-center d-no d-flex flex-column justify-content-end align-items-center">
         <div
-          class="details position-absolute text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-5"
+          class="details position-absolute text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-4"
           style="
             background: #85776c54;
             backdrop-filter: blur(20px);
-            height: 137px;
+            /* height: 137px; */
           ">
-          <h4 class="movie-name text-uppercase fw-normal fs-2 mt-3">
-            <a
-              class="movie-title"
-              href="https://holaa.codexshaper.com/wp/movie/enigma-of-shadows/">Enigma
-              of Shadows</a>
-          </h4>
-          <ul
-            class="movie-info p-0 d-flex gap-4 flex-lg-row lh-1"
-            style="color: #b0adab">
-            <li>
-              <img
-                decoding="async"
-                src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/star-stroke.svg"
-                alt="star" />
-              <span>9.1</span>
-            </li>
-            <li>
-              <img
-                decoding="async"
-                src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/clock-stroke.svg"
-                alt="clock" />
-              <span>03h 10m</span>
-            </li>
-            <li>
-              <img
-                decoding="async"
-                src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/4k-stroke.svg"
-                alt="4k" />
-              <span>4k Quality</span>
-            </li>
-          </ul>
-          <ul class="movie-type lh-1" style="color: #b0adab">
-            <li>Hiking, Drama, Family</li>
-          </ul>
+          <div class="row ">
+            <h4 class="movie-title card-title text-uppercase fw-bold h4">
+              Enigma of
+              Shadows</h4>
+          </div>
+          <div class="row">
+            <ul class=" d-flex gap-2 align-items-center justify-items-center">
+              <li class="d-flex gap-1 align-items-center">
+                <img
+                  src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/star-stroke.svg"
+                  alt="Rating" width="16">
+                <span style="color: #999;">9.1</span>
+              </li>
+              <li class=" d-flex gap-1 align-items-center">
+                <img
+                  src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/clock-stroke.svg"
+                  alt="Duration" width="16">
+                <span style="color: #999;">03h 10m</span>
+              </li>
+              <li class="d-flex gap-1 align-items-center">
+                <img
+                  src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/4k-stroke.svg"
+                  alt="Quality" width="16">
+                <span style="color: #999;">4k Quality</span>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <p class="card-text" style="color: #999;">Hiking, Drama, Family</p>
+          </div>
         </div>
       </div>
     </div>
