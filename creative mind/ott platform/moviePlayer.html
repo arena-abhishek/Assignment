@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
-  <script src="/assets/js/bootstrap-css-cdn.js"></script>
-  <script src="/assets/js/bootstrap-js-cdn.js"></script>
-  <script src="/assets/js/bootstrap-icon-cdn.js"></script>
-  <script src="/assets/js/jquery-cdn.js"></script>
-  <script src="/assets/js/jquery.js"></script>
-  <script src="/assets/js/script.js"></script>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <!-- navigation bar -->
-  <div class="header">
-    <script src="/assets/js/header.js" ></script>
-  </div>
-  <!-- hero section -->
-  <div class="homeHero">
-    <div class="container-">
-  </div>
-    <div class="card rounded-5 border-0 ">
-      <img
-        src="/assets/img/homePageHero.png"
-        alt=""
-        class="card-img rounded-4 d-none d-sm-block"
-      />
-      <img
-        src="/assets/img/homePageMobileHero.png"
-        alt=""
-        class="card-img rounded-4 d-block d-sm-none"
-      />
-      <div
-        class="card-img-overlay rounded-3 d-flex flex-column justify-content-end align-items-center "
-      >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shows player</title>
+    <script src="/assets/js/bootstrap-css-cdn.js"></script>
+    <script src="/assets/js/bootstrap-js-cdn.js"></script>
+    <script src="/assets/js/bootstrap-icon-cdn.js"></script>
+    <script src="/assets/js/jquery-cdn.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="header">
+      <script src="/assets/js/header.js"></script>
+    </div>
+    <!-- hero section -->
+    <div class="container-xxl">
+      <div class="card mt-5 rounded-5 border-0">
+        <img
+          src="/assets/img/moviePcPoster.png"
+          alt=""
+          class="card-img rounded-4 d-none d-sm-block"
+        />
+        <img
+          src="/assets/img/movieMobilePoster.png"
+          alt=""
+          class="card-img rounded-4 d-block d-sm-none"
+        />
         <div
-          class="homeSectionTxt   d-flex flex-column align-items-center gap-4 gap-sm-1"
+          class="card-img-overlay rounded-3 d-flex flex-column justify-content-end align-items-center"
+          style="
+            background: linear-gradient(
+              360deg,
+              rgba(20, 20, 20, 1) 0%,
+              rgba(20, 20, 20, 0) 100%
+            );
+          "
         >
-          <h1
-            class="display-5 text-center fw-semibold mb-0 mb-md-3  "
-            style="color: #fff"
+          <div
+            class="playerSectionTxt d-flex flex-column justify-content-center align-items-center gap-4 gap-sm-1"
+            
           >
-            The Best Streaming Experience
-          </h1>
-          <p class="h6 text-center mb-0 mb-md-5" style="color: #999">
-            Fleek is the best streaming experience for watching your favorite
-            movies and shows on demand, anytime, anywhere.
-            <span class="d-none d-lg-block">
-              With Fleek, you can enjoy a wide variety of content, including
-              the latest blockbusters, classic movies, popular TV shows, and
-              more. You can also create your own watchlists, so you can easily
-              find the content you want to watch.
-            </span>
-          </p>
-          <div class="">
-            <button
-              class="border-0 text-center rounded py-2 py-md-3 px-2 px-md-2 d-flex align-items-center"
-              style="
-                background: linear-gradient(
-                  92deg,
-                  rgba(90, 13, 255, 1) 0%,
-                  rgba(255, 41, 221, 1) 37%,
-                  rgba(255, 88, 28, 1) 92%
-                );
-              "
-            >
-              <i class="bi bi-play-fill display-6 text-white"></i>
-              <span class="text-white display-6 fs-4 fw-semibold"
-                >Start Watching now</span
+            <h1 class=" display-5" style="color: #fff">Kantara</h1>
+            <p class="d-none d-lg-block" style="color: #999">
+              A fiery young man clashes with an unflinching forest officer in
+              a south Indian village where spirituality, fate and folklore
+              rule the lands.
+            </p>
+            <div class=" text-center">
+              <button
+                class="border-0 rounded py-1 py-sm-2 px-2 px-sm-3"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgba(90, 13, 255, 1) 0%,
+                    rgba(255, 41, 221, 1) 37%,
+                    rgba(255, 88, 28, 1) 92%
+                  );
+                "
               >
-            </button>
+                <i class="bi bi-play-fill text-white"></i>
+                <span class="text-white fw-semibold">Play now</span>
+              </button>
+              <button
+                class=" ms-0 ms-sm-4 border-0 rounded py-1 py-sm-2 px-2 px-sm-3"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgba(90, 13, 255, 1) 0%,
+                    rgba(255, 41, 221, 1) 37%,
+                    rgba(255, 88, 28, 1) 92%
+                  );
+                "
+              >
+                <i class="bi bi-play-fill text-white"></i>
+                <span class="text-white fw-semibold">Watch Trailer</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- card slider -->
+    <!-- movie detail -->
+    <div class="moviesDetail">
+      <script src="/assets/js/movieDetails.js"></script>
+    </div>
+    <!-- card slider -->
 
-  <!-- faq -->
-  <div class="faq">
-    <script src="/assets/js/faq.js"></script>
-  </div>
-
-  <!-- price card -->
-  <div class="price">
-    <script src="/assets/js/priceCard.js"></script>
-  </div>
-  <!-- subscription -->
-  <div class="subs">
-    <script src="assets/js/subscription.js"></script>
-  </div>
-  <!-- footer -->
-  <div class="footer">
-    <script src="assets/js/footer.js"></script>
-  </div>
-
-</body>
+    <!-- subscription -->
+    <div class="subs">
+      <script src="assets/js/subscription.js"></script>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <script src="assets/js/footer.js"></script>
+    </div>
+  </body>
 </html>

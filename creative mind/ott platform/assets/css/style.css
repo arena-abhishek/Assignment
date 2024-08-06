@@ -63,6 +63,7 @@ li {
 }
 .play-icon {
   font-size: 38px;
+  margin-left: 6px;
 }
 
 .card:hover .video-play-btn {
@@ -76,7 +77,7 @@ li {
   background: #85776c54;
   backdrop-filter: blur(20px);
   height: 41%;
-  margin-top: 195px;
+  margin-top: 303px;
 }
 
 .card:hover .details {
@@ -167,6 +168,15 @@ li {
   height: 30%;
 }
 
+
+/* movie and show details */
+.showsDetail{
+  margin-top: 100px;
+}
+.moviesDetail{
+  margin-top: 100px;
+}
+
 /* home hero section */
 .homeHero {
   position: absolute;
@@ -215,4 +225,12 @@ img {
 }
 .fqsHead {
   display: block;
+}
+
+/* support */
+.supp{
+  margin-top: 150px;
+}
+.suppFaq{
+  margin-top: 150px;
 }

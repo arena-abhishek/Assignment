@@ -28,7 +28,7 @@ document.write(` <header class="container-fluid">
                 <a
                   class="h4 nav-link navItems  rounded active py-3 px-4"
                   aria-current="page"
-                  href="/">Home</a>
+                  href="index.html">Home</a>
               </li>
               <li class="nav-item ">
                 <a
