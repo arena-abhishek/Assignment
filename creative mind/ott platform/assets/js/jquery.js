@@ -80,3 +80,11 @@ $(document).ready(function () {
     carouselInstance.prev();
   });
 });
+
+/* navigation bar */
+$(document).ready(function () {
+  $(".navItems").click(function () {
+    $(".navItems").removeClass("active");
+    $(this).addClass("active");
+  });
+});

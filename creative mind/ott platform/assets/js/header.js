@@ -1,21 +1,15 @@
-document.write(` <header class="container-fluid">
+document.write(`   <header class="container-fluid">
 <div class="container-xxl">
-  <nav class=" navbar-expand-lg navbar-dark bg-transparent"
-    style="height: 174px;">
-    <div class=" row gap-0 py-sm-1 d-flex align-items-center">
+  <nav class=" navbar-expand-lg navbar-dark bg-transparent">
+    <div class=" row gap-0 py-sm-1 d-flex align-items-center" >
       <div
         class="col-6 col-md-6 col-lg-2 d-flex justify-content-center justify-content-sm-start align-content-center">
         <!-- logo -->
         <a class="navbar-brand" href="#"><img
             src="/assets/img/logo.png"
-            class=" d-none d-lg-block"
             alt="logo"
-            width="180" />
-          <img
-            src="/assets/img/logo.png"
-            class="d-block d-lg-none"
-            alt="logo"
-            width="120" />
+            width="114" height="114" />
+ 
         </a>
       </div>
       <div
@@ -23,25 +17,25 @@ document.write(` <header class="container-fluid">
         <div class="row ">
           <div class="col fleekNavBorder px-1 py-1">
             <ul
-              class="navbar-nav fleekNav py-3 px-4 d-flex gap-3 align-items-center justify-items-center rounded w-100">
-              <li class="nav-item ">
+              class="navbar-nav fleekNav p-2  d-flex  align-items-center justify-items-center  flex-grow-1">
+              <li class="nav-item navItems rounded  ">
                 <a
-                  class="h4 nav-link navItems  rounded active py-3 px-4"
+                  class="h4 nav-link py-3 px-4 rounded "
                   aria-current="page"
-                  href="index.html">Home</a>
+                  href="/home.html">Home</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item navItems rounded ">
                 <a
                   class="h4 nav-link py-3 px-4 rounded"
                   href="/movies&shows.html">Movies <span>&</span>
                   Shows</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item navItems rounded  ">
                 <a
                   class="h4 nav-link py-3 px-4 rounded"
                   href="/support.html  ">Support</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item navItems rounded  ">
                 <a
                   class="h4 nav-link py-3 px-4 rounded"
                   href="/subscription.html">Subscription</a>
@@ -55,11 +49,13 @@ document.write(` <header class="container-fluid">
         <!-- search & notification -->
         <div
           class="d-flex justify-content-end align-items-center gap-3">
-          <a href="#search" class="text-white display-6"><i
-              class="bi bi-search"></i></a>
+          <a href="#search" class="text-white "
+            ><i
+              class="bi bi-search" style="font-size: x-large;"></i></a>
           <a
             href="#notificationIcon"
-            class="text-white display-6"><i class="bi bi-bell"></i></a>
+            class="text-white " ><i
+              class="bi bi-bell" style="font-size: x-large;"></i></a>
         </div>
       </div>
       <div
@@ -87,7 +83,7 @@ document.write(` <header class="container-fluid">
         <!-- sidebar header -->
         <div class="offcanvas-header text-white p-2">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img src="/assets/img/logo.png" alt="logo" width="130" />
+            <img src="/assets/img/logo.png" alt="logo" width="114" height="114" />
           </h5>
 
           <button
@@ -114,10 +110,10 @@ document.write(` <header class="container-fluid">
             class="navbar-nav d-block d-lg-none fs-5 flex-grow-1 pe-3 rounded">
             <li class="nav-item mx-2">
               <a class="nav-link active" aria-current="page"
-                href="/">Home</a>
+                href="/home.html">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="/movies&shows.html">Movies & Shows</a>
+              <a class="nav-link" href="/movies&shows.html">Movies</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="/support.html">Support</a>

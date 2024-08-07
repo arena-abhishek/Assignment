@@ -6,18 +6,27 @@
   
   
   */
+html {
+  box-sizing: border-box;
+}
 body {
   background-color: #15141f;
+  margin: 0;
+  padding: 0;
 }
 
 .fleekNav {
   background-color: #0f0f0f;
+  border-radius: 14px;
+}
+.navItems:hover {
+  background-color: #1a1a1a;
   
 }
 .fleekNavBorder {
   position: relative;
 }
-.navItems {
+.navItems::active {
   background-color: #1a1a1a;
 }
 
@@ -28,7 +37,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 17px;
   border: 0px solid transparent;
   z-index: -1;
   background-image: linear-gradient(
