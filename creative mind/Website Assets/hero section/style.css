@@ -1,0 +1,32 @@
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 23%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0f0f0f;
+}
+
+
+/* .carousel-item-container {
+  position: relative;
+} */
+.gradient-background {
+  background: linear-gradient(
+    360deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 0) 100%
+  );
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-caption-container {
+  position: relative;
+  z-index: 2;
+}

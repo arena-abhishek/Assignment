@@ -37,6 +37,204 @@ li {
   list-style: none;
 }
 
+/* footer */
+.footer {
+  margin-top: 150px;
+}
+
+/*
+@media (max-width:991px ) {
+  .sidebar{
+    background-color: #15141f;
+    backdrop-filter: blur;
+  }
+  
+} 
+ */
+
+/* header*/
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.fleekNav {
+  background-color: #0f0f0f;
+}
+.fleekNavBorder {
+  position: relative;
+}
+.navItems {
+  background-color: #1a1a1a;
+}
+
+.fleekNavBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  z-index: -1;
+  background-image: linear-gradient(
+    92deg,
+    rgba(90, 13, 255, 1) 0%,
+    rgba(255, 41, 221, 1) 37%,
+    rgba(255, 88, 28, 1) 92%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+/* home hero section */
+.homeHero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.homeSectionTxt {
+  height: 4%;
+}
+img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* subscription */
+
+.subs {
+  margin-top: 150px;
+}
+#subImg {
+  background-image: url(/assets/img/trial.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 314px;
+}
+
+.subcBackground {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 0) 100%
+  );
+}
+
+/* Desktop view (min-width: 576px) */
+@media (min-width: 576px) {
+  .subcBackground {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(20, 20, 20, 0) 100%
+    );
+  }
+}
+
+/* price card */
+.price {
+  margin-top: 150px;
+}
+
+/* faq */
+
+.faq {
+  margin-top: 60%;
+}
+.fqs {
+  display: none;
+}
+.fqsHead {
+  display: block;
+}
+
+/* support */
+.supp {
+  margin-top: 150px;
+}
+.suppFaq {
+  margin-top: 150px;
+}
+
+/* movies & shows hero section */
+
+.movieShowHeroSection {
+  margin-top: 150px;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    360deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 0) 100%
+  );
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-caption-container {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-fade .carousel-item {
+  transition: opacity 0.5s;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-item:not(.active) {
+  opacity: 0;
+}
+
+/* movie and show details */
+.showsDetail {
+  margin-top: 100px;
+}
+.moviesDetail {
+  margin-top: 100px;
+}
+
+/* movie and show player */
+
+.playerSectionTxt {
+  height: 30%;
+}
+
+.movie-title {
+  color: #fff;
+}
+
+.movie-title:hover {
+  background: linear-gradient(
+    92deg,
+    rgba(90, 13, 255, 1) 0%,
+    rgba(255, 41, 221, 1) 37%,
+    rgba(255, 88, 28, 1) 92%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 0.2s ease-in-out;
+}
+
+/* card */
+
 .card-hover {
   position: absolute;
   top: 0;
@@ -92,145 +290,4 @@ li {
   100% {
     transform: translateY();
   }
-}
-
-.movie-title {
-  color: #fff;
-}
-
-.movie-title:hover {
-  background: linear-gradient(
-    92deg,
-    rgba(90, 13, 255, 1) 0%,
-    rgba(255, 41, 221, 1) 37%,
-    rgba(255, 88, 28, 1) 92%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: 0.2s ease-in-out;
-}
-
-/* footer */
-.footer {
-  margin-top: 150px;
-}
-
-/*
-@media (max-width:991px ) {
-  .sidebar{
-    background-color: #15141f;
-    backdrop-filter: blur;
-  }
-  
-} 
- */
-
-/* header*/
-.header {
-  position: relative;
-  z-index: 1;
-}
-
-.fleekNav {
-  background-color: #0f0f0f;
-}
-.fleekNavBorder {
-  position: relative;
-}
-.navItems {
-  background-color: #1a1a1a;
-}
-
-.fleekNavBorder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border: 0px solid transparent;
-  z-index: -1;
-  background-image: linear-gradient(
-    92deg,
-    rgba(90, 13, 255, 1) 0%,
-    rgba(255, 41, 221, 1) 37%,
-    rgba(255, 88, 28, 1) 92%
-  );
-  background-clip: border-box;
-  -webkit-background-clip: border-box;
-}
-
-/* movie and show player */
-
-.playerSectionTxt {
-  height: 30%;
-}
-
-
-/* movie and show details */
-.showsDetail{
-  margin-top: 100px;
-}
-.moviesDetail{
-  margin-top: 100px;
-}
-
-/* home hero section */
-.homeHero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.homeSectionTxt {
-  height: 4%;
-}
-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* subscription */
-
-.subs {
-  margin-top: 150px;
-}
-#subImg {
-  background-image: url(/assets/img/trial.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 314px;
-}
-
-/* price card */
-.price {
-  margin-top: 150px;
-}
-
-/* faq */
-
-.faq {
-  margin-top: 60%;
-}
-.fqs {
-  display: none;
-}
-.fqsHead {
-  display: block;
-}
-
-/* support */
-.supp{
-  margin-top: 150px;
-}
-.suppFaq{
-  margin-top: 150px;
 }

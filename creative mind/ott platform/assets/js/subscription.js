@@ -2,14 +2,10 @@ document.write(`
 <section class="container-fluid">
 <div class="container-xxl rounded-4 position-relative" id="subImg">
   <div
-    class="card-img-overlay position-absolute row d-flex justify-content-center align-items-center px-2 px-sm-5 py-2 py-sm-5"
+    class="card-img-overlay subcBackground position-absolute row d-flex justify-content-center align-items-center px-2 px-sm-5 py-2 py-sm-5"
     style="
       height: 314px;
-      background: linear-gradient(
-        180deg,
-        rgba(20, 20, 20, 1) 0%,
-        rgba(20, 20, 20, 0) 100%
-      );
+ 
     "
   >
     <div class="col-12 col-md-6 text-center text-sm-start">
