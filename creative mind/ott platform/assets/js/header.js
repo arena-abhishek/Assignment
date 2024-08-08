@@ -17,12 +17,12 @@ document.write(`   <header class="container-fluid">
         <div class="row ">
           <div class="col fleekNavBorder px-1 py-1">
             <ul
-              class="navbar-nav fleekNav p-2  d-flex  align-items-center justify-items-center  flex-grow-1">
-              <li class="nav-item navItems rounded  ">
+              class="navbar-nav fleekNav pt-2 px-1  d-flex  align-items-center justify-items-center  flex-grow-1">
+              <li class="nav-item navItems rounded   ">
                 <a
-                  class="h4 nav-link py-3 px-4 rounded "
+                  class="h4 nav-link py-3 px-4 rounded d-inline-block "
                   aria-current="page"
-                  href="/home.html">Home</a>
+                  href="/index.html">Home</a>
               </li>
               <li class="nav-item navItems rounded ">
                 <a
@@ -110,7 +110,7 @@ document.write(`   <header class="container-fluid">
             class="navbar-nav d-block d-lg-none fs-5 flex-grow-1 pe-3 rounded">
             <li class="nav-item mx-2">
               <a class="nav-link active" aria-current="page"
-                href="/home.html">Home</a>
+                href="/index.html">Home</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="/movies&shows.html">Movies</a>

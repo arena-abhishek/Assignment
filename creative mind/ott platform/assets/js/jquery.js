@@ -88,3 +88,6 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
+
+
+/* carousel card slider */
