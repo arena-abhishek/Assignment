@@ -11,6 +11,10 @@ body {
   background-color: #15141f;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 h1,
@@ -220,11 +224,6 @@ img {
   margin-top: 100px;
 }
 
-.movieGenre::before{
-  border: 3px solid #1a1a1a;
-}
-
-
 /* movie and show player */
 
 .playerSectionTxt {
@@ -367,3 +366,41 @@ img {
     justify-content: center;
   }
 }
+
+/* movies and show genere */
+
+.movieGenre {
+  border-radius: 14px; /* round the corners */
+  background-image: linear-gradient(
+    92deg,
+    rgba(90, 13, 255, 1) 0%,
+    rgba(255, 41, 221, 1) 37%,
+    rgba(255, 88, 28, 1) 92%
+  );
+  background-size: 100% 100%; /* ensure the gradient covers the entire element */
+  /* padding: 1em */
+  margin-top: 150px;
+/*   height: 3066px;
+  width: 1332px; */
+  /* top: -53px; */
+}
+
+.movieGenreBg {
+  background-color: #15141f;
+  margin: 5px 6px;
+  padding-top: 63px;
+  border-radius: 9px;
+}
+
+/* @media (max-width: 1020px) and (min-width: 320px) {
+  .movieGenre {
+    margin-top: 0;
+    height:max-content;
+    width: max-content;
+    border-radius: 0;
+    background-image: none;
+  }
+  .movieGenreBg {
+    padding-top: 0;
+  }
+} */
