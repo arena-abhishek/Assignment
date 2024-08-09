@@ -20,12 +20,27 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      // Load intlTelInput library dynamically
+      let script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/dist/js/intlTelInput.min.js"; 
+      document.head.appendChild(script);
+    </script>
     <link rel="stylesheet" href="style.css" />
     <script src="jquery.js" defer></script>
   </head>
   <style>
     body {
       background-color: #15141f;
+    }
+    .country-code-list {
+      background-color: #4d4b58;
+      height: max-content;
+      width: max-content;
+      list-style: none;
+      color: #999;
+      border-radius: 5px;
     }
   </style>
   <body>
@@ -112,25 +127,44 @@
                 </div>
                 <div class="col-12 col-sm-6">
                   <div class="row">
-                    <label for="phoneNo" class="form-label text-white"
+                    <label
+                      for="phoneNo"
+                      class="form-label text-white"
+                      id="phoneNo"
                       >Phone Number</label
                     >
                     <div class="col-3">
                       <button
-                        class="p-2 rounded"
+                        class="p-2 rounded countryCode"
                         style="
                           background-color: #141414;
                           border: 1px solid #2a2a2a;
                         "
                       >
+                        <div id="flags"></div>
                         <img
                           src="indian flag.jpg"
                           width="30px"
+                          clases="flag-image"
                           style="border-radius: 2px"
                           alt="flag"
                         />
                         <i class="bi bi-caret-down" style="color: #999"></i>
                       </button>
+                      <ul class="country-code-list" style="display: none">
+                        <li data-country-code="+1" data-flag-src="usa-flag.jpg">
+                          USA (+1)
+                        </li>
+                        <li data-country-code="+44" data-flag-src="uk-flag.jpg">
+                          UK (+44)
+                        </li>
+                        <li
+                          data-country-code="+91"
+                          data-flag-src="indian-flag.jpg"
+                        >
+                          India (+91)
+                        </li>
+                      </ul>
                     </div>
                     <div class="col-9">
                       <input

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Code List</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/dist/css/intlTelInput.css" />
+</head>
+<body>
+  <input id="phone" type="tel" />
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/dist/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "us", // Try setting a specific country code
+      separateDialCode: true,
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/dist/js/utils.js",
+    });
+  </script>
+</body>
+</html>
