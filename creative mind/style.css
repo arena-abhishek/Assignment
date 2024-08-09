@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div{
+  background-color: black;
+  margin-top: 150px;
+  height: 100vh;
+  border: 50px ;
+  border-style: solid;
+  border-top: rgba(52, 48, 135);
+}

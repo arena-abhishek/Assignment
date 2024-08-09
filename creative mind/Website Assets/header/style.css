@@ -21,7 +21,6 @@ body {
 }
 .navItems:hover {
   background-color: #1a1a1a;
-  
 }
 .fleekNavBorder {
   position: relative;
@@ -50,9 +49,139 @@ body {
   -webkit-background-clip: border-box;
 }
 
+.searchPanelBg {
+  /* background-color: rgba(52, 48, 135, 0.5); */
+  background-color: #1c1a30;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  margin-top: 50px;
+  height: 100vh;
+  filter: blur(10px);
+}
+
+#searchInput {
+  top: 85px;
+  right: 52px;
+  width: 233px;
+  border: 3px solid rgba(52, 48, 135);
+  background-color: #141414;
+  color: #999;
+  outline: none;
+  /* transition: 1s; */
+}
 /* @media (max-width: 991px) {
   .sidebar {
     background-color: #15141f;
     backdrop-filter: blur;
   }
+    
+
+  /* search */
+
+/* #searchInput:focus{
+  background-color:#d3cccc ;
+  color: black;
 } */
+
+
+
+
+#searchPanel .row  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    padding: 10px;
+    width: 25%;
+    flex-basis: 25%;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
+}
+
+.box .overlay {
+    width: 100%;
+    max-height: 100%;
+    min-height: auto;
+    position: absolute;
+    bottom: -100%;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    left: 0;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.box span {
+    color: orange;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box:hover .overlay {
+    bottom: 0%;
+}
+
+.overlay h2 {
+    margin-bottom: 10px;
+}
+
+#search {
+    width: 500px;
+    padding: 5px 30px;
+    background-color: rgba(52, 73, 94, 0.7);
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px white;
+    color: White;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 25px;
+    transition: 1s;
+    margin-bottom: 15px;
+}
+
+#search:focus {
+    background-color: white;
+    color: black;
+}
+
+
+.scrollbar {
+  scrollbar-width: thin; /* thin scrollbar */
+  scrollbar-color: #337ab7 #f5f5f5; /* color of the scrollbar thumb and background */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+  height: 12px; /* height of the scrollbar */
+  background-color: #f5f5f5; /* background color of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #337ab7; /* color of the scrollbar thumb */
+  border-radius: 10px; /* rounded corners of the scrollbar thumb */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #23527c; /* hover color of the scrollbar thumb */
+}

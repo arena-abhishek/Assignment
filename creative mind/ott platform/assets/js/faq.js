@@ -18,17 +18,12 @@ document.write(`
     >
       <a
         href="#"
-        class="text-white fw-5 fs-6 text-center py-2 py-sm-2 px-3 px-sm-4 rounded-2"
+        class="text-white btn-base fw-5 fs-6 text-center py-2 py-sm-2 px-3 px-sm-4 rounded-2"
         style="
           text-decoration: none;
           width: max-content;
           height: max-content;
-          background: linear-gradient(
-            92deg,
-            rgba(90, 13, 255, 1) 0%,
-            rgba(255, 41, 221, 1) 37%,
-            rgba(255, 88, 28, 1) 92%
-          );
+       
         "
         type="button"
         >Ask a Question</a
@@ -522,4 +517,4 @@ document.write(`
     </div>
   </div>
 </div>
-</section>`)
+</section>`);

@@ -24,15 +24,10 @@ document.write(`
     <div class="col d-flex justify-content-center justify-content-sm-end">
       <a
         href="#"
-        class="text-white fw-5 h-6 text-center py-2 py-sm-3 px-3 px-sm-4 rounded-2"
+        class="text-white btn-base fw-5 h-6 text-center py-2 py-sm-3 px-3 px-sm-4 rounded-2"
         style="
           text-decoration: none;
-          background: linear-gradient(
-            92deg,
-            rgba(90, 13, 255, 1) 0%,
-            rgba(255, 41, 221, 1) 37%,
-            rgba(255, 88, 28, 1) 92%
-          );
+       
         "
         type="button"
         >Start a Free Trial</a

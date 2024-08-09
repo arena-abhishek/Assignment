@@ -91,3 +91,35 @@ $(document).ready(function () {
 
 
 /* carousel card slider */
+
+var multipleCardCarousel = document.querySelector(
+  "#carouselCardsControls"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselWidth = $(".carousel-inner-category")[0].scrollWidth;
+  var cardWidth = $(".item-category").width();
+  var scrollPosition = 0;
+  $("#carouselCardsControls .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselCardsControls .carousel-inner-category").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselCardsControls .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselCardsControls .carousel-inner-category").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}

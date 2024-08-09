@@ -75,17 +75,12 @@ document.write(`
                   <div class="col">
                     <a
                       href="#"
-                      class="py-2 px-3 rounded"
+                      class="py-2 px-3 rounded btn-base"
                       type="button"
                       style="
                         text-decoration: none;
                         color: #fff;
-                        background: linear-gradient(
-                          92deg,
-                          rgba(90, 13, 255, 1) 0%,
-                          rgba(255, 41, 221, 1) 37%,
-                          rgba(255, 88, 28, 1) 92%
-                        );
+                     
                       "
                       >Choose Plan</a
                     >
@@ -135,17 +130,12 @@ document.write(`
                   <div class="col">
                     <a
                       href="#"
-                      class="py-2 px-3 rounded"
+                      class="py-2 px-3 rounded btn-base"
                       type="button"
                       style="
                         text-decoration: none;
                         color: #fff;
-                        background: linear-gradient(
-                          92deg,
-                          rgba(90, 13, 255, 1) 0%,
-                          rgba(255, 41, 221, 1) 37%,
-                          rgba(255, 88, 28, 1) 92%
-                        );
+                       
                       "
                       >Choose Plan</a
                     >
@@ -195,17 +185,12 @@ document.write(`
                   <div class="col">
                     <a
                       href="#"
-                      class="py-2 px-3 rounded"
+                      class="py-2 px-3 rounded btn-base"
                       type="button"
                       style="
                         text-decoration: none;
                         color: #fff;
-                        background: linear-gradient(
-                          92deg,
-                          rgba(90, 13, 255, 1) 0%,
-                          rgba(255, 41, 221, 1) 37%,
-                          rgba(255, 88, 28, 1) 92%
-                        );
+                     
                       "
                       >Choose Plan</a
                     >
