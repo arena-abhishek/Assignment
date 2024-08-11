@@ -8,13 +8,14 @@
     <script src="/assets/js/bootstrap-js-cdn.js"></script>
     <script src="/assets/js/bootstrap-icon-cdn.js"></script>
     <script src="/assets/js/jquery-cdn.js"></script>
-    <script src="/assets/js/jquery.js" defer></script>
     <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/jquery.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
+
   <body>
     <!-- navigation bar -->
-    <script src="/assets/js/header.js"></script>
+    <div class="header"></div>
 
     <!-- movies & shows hero section -->
     <div class="movieShowHeroSection">
@@ -205,18 +206,39 @@
     </div>
 
     <!-- movies genres -->
-    <section class="container-fluid">
-      <div class="container-xxl">
-        <script src="/assets/js/ourGenres.js"></script>
+
+    <!-- Card Slider Start -->
+    <div class="container-xxl">
+      <div class="row text-category" style="margin-bottom: 68px">
+        <span class="text-white display-3">New Releases</span>
       </div>
-    </section>
+      <div id="carouselCardsControls" class="carousel">
+        <div class="carousel-inner carousel-inner-category" id="tt"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCardsControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCardsControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Card Slider End -->
+
     <!-- subscription -->
-    <div class="subs">
-      <script src="assets/js/subscription.js"></script>
-    </div>
+    <div class="subs"></div>
     <!-- footer -->
-    <div class="footer">
-      <script src="assets/js/footer.js"></script>
-    </div>
+    <div class="footer container-fluid" style="background-color: #161616"></div>
   </body>
 </html>

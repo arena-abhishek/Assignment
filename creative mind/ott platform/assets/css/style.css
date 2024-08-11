@@ -163,22 +163,22 @@ img {
 /* faq */
 
 .faq {
-  margin-top: 60%;
+  margin-top: 150px;
 }
 .fqs {
   display: none;
 }
-.fqsHead {
+/* .fqsHead {
   display: block;
-}
+} */
 
 /* support */
 .supp {
   margin-top: 50px;
 }
-.suppFaq {
+/* .suppFaq {
   margin-top: 150px;
-}
+} */
 
 /* movies & shows hero section */
 

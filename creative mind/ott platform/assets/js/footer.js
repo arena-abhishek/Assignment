@@ -1,4 +1,4 @@
-document.write(` <div class="contanier-fluid " style="background-color: #161616">
+/* document.write(` <div class="contanier-fluid " style="background-color: #161616">
 <div class="container-xxl" style="background-color: #161616">
   <footer class="py-5 0f0f0f">
     <div class="row">
@@ -126,4 +126,4 @@ document.write(` <div class="contanier-fluid " style="background-color: #161616"
     </div>
   </footer>
 </div>
-</div>`)
+</div>`) */

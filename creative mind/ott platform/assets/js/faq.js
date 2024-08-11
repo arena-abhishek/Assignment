@@ -1,5 +1,5 @@
 document.write(`
-<section class="conatainer-fluid mt-5">
+<section class="conatainer-fluid ">
 <div class="container-xxl">
   <div class="row">
     <div class="col-12 col-md-8">

@@ -1,4 +1,4 @@
-document.write(`   <header class="container-fluid">
+/* document.write(`   <header class="container-fluid">
 <div class="container-xxl">
   <nav class=" navbar-expand-lg navbar-dark bg-transparent">
     <div class=" row gap-0 py-sm-1 d-flex align-items-center" >
@@ -141,4 +141,4 @@ document.write(`   <header class="container-fluid">
     </div>
   </nav>
 </div>
-</header>`)
+</header>`) */

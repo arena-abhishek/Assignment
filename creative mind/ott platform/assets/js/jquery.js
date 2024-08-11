@@ -91,7 +91,9 @@ $(document).ready(function () {
 
 /* carousel card slider */
 
-var multipleCardCarousel = document.querySelector("#carouselCardsControls");
+var multipleCardCarousel = document.querySelector(
+  "#carouselCardsControls"
+);
 if (window.matchMedia("(min-width: 768px)").matches) {
   var carousel = new bootstrap.Carousel(multipleCardCarousel, {
     interval: false,
@@ -119,5 +121,5 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   });
 } else {
   $(multipleCardCarousel).addClass("slide");
-  console.error("whoops");
 }
+
