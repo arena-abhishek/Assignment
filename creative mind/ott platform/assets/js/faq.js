@@ -1,6 +1,5 @@
-document.write(`
-<section class="conatainer-fluid ">
-<div class="container-xxl">
+let faq = document.querySelector(".faq");
+let content4 = `<div class="container-xxl">
   <div class="row">
     <div class="col-12 col-md-8">
       <div class="row mb-2">
@@ -516,5 +515,6 @@ document.write(`
       </div>
     </div>
   </div>
-</div>
-</section>`);
+</div>`;
+myFaq = makeElement("section", "container-fluid", "", "", content4);
+faq.append(myFaq);

@@ -1,9 +1,9 @@
 const card = document.querySelector("#tt");
-let myElement = [];
+let cardElement = [];
 for (let i = 0; i < 10; i++) {
-  myElement[i] = document.createElement("div");
-  myElement[i].classList.add("carousel-item", "item-category");
-  myElement[i].innerHTML = `
+  cardElement[i] = document.createElement("div");
+  cardElement[i].classList.add("carousel-item", "item-category");
+  cardElement[i].innerHTML = `
 <div class="card-wrapper">
   <div class="card rounded-5 border-0" style="width: 300px">
     <img src="https://holaa.codexshaper.com/wp/wp-content/uploads/2024/03/trending-3.png" alt
@@ -77,5 +77,5 @@ for (let i = 0; i < 10; i++) {
 </div>
 `;
 
-  tt.append(myElement[i]);
+  card.append(cardElement[i]);
 }
