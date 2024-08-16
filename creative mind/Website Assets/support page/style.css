@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +13,7 @@
   /* padding: 1rem 0.6rem */
   /* font-size: 1.1rem; */
   border: none;
-  border-left: 0.1rem solid #262626 ;
+  border-left: 0.1rem solid #262626;
   background: none;
   outline: none;
   color: #eee;
@@ -70,7 +68,7 @@ input[type="tel"] {
   top: 4rem;
 
   width: 100%;
-  background-color:#141414;
+  background-color: #141414;
   border: 1px solid #262626;
   border-radius: 0.5rem;
 
@@ -140,4 +138,22 @@ input.search-box {
 
 .select-box ol li .country-name {
   margin-left: 0.4rem;
+}
+/* 
+::-webkit-input-placeholder{
+  color: #999;
+} */
+
+#first-name,
+#last-name,
+#email {
+  background-color: transparent;
+  color: #eee;
+  border-color: #262626;
+}
+
+#first-name::placeholder,
+#last-name::placeholder,
+#email::placeholder {
+  color: #999;
 }

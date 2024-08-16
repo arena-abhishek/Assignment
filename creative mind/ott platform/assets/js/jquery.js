@@ -28,59 +28,6 @@ $(document).ready(function () {
 
 /* movies and shows hero section touch swiping */
 
-$(document).ready(function () {
-  const carousel = $("#carouselExampleCaptions");
-  const carouselInstance = new bootstrap.Carousel(carousel);
-
-  // Mouse events
-  carousel.on("mousedown", function (event) {
-    const startX = event.clientX;
-    const startY = event.clientY;
-    // console.log("run")
-    $(document).on("mousemove", function (event) {
-      const deltaX = event.clientX - startX;
-      const deltaY = event.clientY - startY;
-      if (Math.abs(deltaX) > Math.abs(deltaY)) {
-        // horizontal drag
-        if (deltaX > 50) {
-          carouselInstance.prev();
-        } else if (deltaX < -50) {
-          carouselInstance.next();
-        }
-      }
-      $(document).off("mousemove");
-    });
-  });
-
-  // Touch events
-  carousel.on("touchstart", function (event) {
-    const startX = event.originalEvent.touches[0].clientX;
-    const startY = event.originalEvent.touches[0].clientY;
-    $(document).on("touchmove", function (event) {
-      const deltaX = event.originalEvent.touches[0].clientX - startX;
-      const deltaY = event.originalEvent.touches[0].clientY - startY;
-      if (Math.abs(deltaX) > Math.abs(deltaY)) {
-        // horizontal drag
-        if (deltaX > 50) {
-          carouselInstance.prev();
-        } else if (deltaX < -50) {
-          carouselInstance.next();
-        }
-      }
-      $(document).off("touchmove");
-    });
-  });
-
-  // Swipe gestures
-  carousel.on("swipeleft", function () {
-    carouselInstance.next();
-  });
-
-  carousel.on("swiperight", function () {
-    carouselInstance.prev();
-  });
-});
-
 /* navigation bar  */
 $(document).ready(function () {
   $(".navItems").click(function () {
@@ -91,20 +38,19 @@ $(document).ready(function () {
 
 /* carousel card slider */
 
-var multipleCardCarousel = document.querySelector("#carouselCardsControls");
-if (multipleCardCarousel && window.matchMedia("(min-width: 768px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false,
-  });
-  var carouselInnerCategory = $(".carousel-inner-category");
-  if (carouselInnerCategory.length > 0) {
-    var carouselWidth = carouselInnerCategory[0].scrollWidth;
+$(document).ready(function () {
+  var multipleCardCarousel = document.querySelector("#carouselCardsControls");
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+      interval: false,
+    });
+    var carouselWidth = $(".carousel-inner-category")[0].scrollWidth;
     var cardWidth = $(".carousel-item").width();
     var scrollPosition = 0;
     $("#carouselCardsControls .carousel-control-next").on("click", function () {
       if (scrollPosition < carouselWidth - cardWidth * 4) {
         scrollPosition += cardWidth;
-        carouselInnerCategory.animate(
+        $("#carouselCardsControls .carousel-inner-category").animate(
           { scrollLeft: scrollPosition },
           600
         );
@@ -113,45 +59,93 @@ if (multipleCardCarousel && window.matchMedia("(min-width: 768px)").matches) {
     $("#carouselCardsControls .carousel-control-prev").on("click", function () {
       if (scrollPosition > 0) {
         scrollPosition -= cardWidth;
-        carouselInnerCategory.animate(
+        $("#carouselCardsControls .carousel-inner-category").animate(
           { scrollLeft: scrollPosition },
           600
         );
       }
     });
+  } else {
+    $(multipleCardCarousel).addClass("slide");
   }
-} else if (multipleCardCarousel) {
-  $(multipleCardCarousel).addClass("slide");
-}
-var multipleCardCarousel = document.querySelector(
-  "#carouselCardsControls"
-);
-if (window.matchMedia("(min-width: 768px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false,
-  });
-  var carouselWidth = $(".carousel-inner-category")[0].scrollWidth;
-  var cardWidth = $(".carousel-item").width();
-  var scrollPosition = 0;
-  $("#carouselCardsControls .carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 4) {
-      scrollPosition += cardWidth;
-      $("#carouselCardsControls .carousel-inner-category").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-  $("#carouselCardsControls .carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      $("#carouselCardsControls .carousel-inner-category").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-} else {
-  $(multipleCardCarousel).addClass("slide");
-}
+});
 
+$(document).ready(function () {
+  $(".sliderOne").owlCarousel({
+    loop: true,
+    // slideTransition: ``,
+    // slideBy: 1,
+    dots:true,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 4,
+        nav: true,
+        loop: false,
+      },
+      1030: {
+        items: 5,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+});
+
+/* hero section slider */
+$(document).ready(function () {
+  $(".heroSlider").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    animateOut: "fadeOut",
+  });
+});
+
+/* search icon */
+
+$(document).ready(function () {
+  $("#searchInput").hide();
+  $("#searchPanel").hide();
+
+  $(".searchIcon").on("click", function () {
+    $("#searchPanel")
+      .addClass("searchPanelBg")
+      .animate(
+        {
+          width: "toggle",
+          opacity: "toggle",
+        },
+        {
+          duration: 500,
+          easing: "swing",
+          complete: function () {
+            $(this).focus();
+          },
+        }
+      );
+    $("#searchInput").animate(
+      {
+        width: "toggle",
+        opacity: "toggle",
+      },
+      {
+        duration: 500,
+        easing: "swing",
+        complete: function () {
+          $(this).focus();
+        },
+      }
+    );
+  });
+});

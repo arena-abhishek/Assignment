@@ -79,9 +79,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   });
 } */
 
-  var multipleCardCarousel = document.querySelector(
-    "#carouselCardsControls"
-  );
+$(document).ready(function () {
+  var multipleCardCarousel = document.querySelector("#carouselCardsControls");
   if (window.matchMedia("(min-width: 768px)").matches) {
     var carousel = new bootstrap.Carousel(multipleCardCarousel, {
       interval: false,
@@ -110,3 +109,4 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   } else {
     $(multipleCardCarousel).addClass("slide");
   }
+});

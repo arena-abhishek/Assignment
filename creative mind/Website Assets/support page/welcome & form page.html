@@ -35,14 +35,14 @@
     body {
       background-color: #15141f;
     }
-    .country-code-list {
+    /* .country-code-list {
       background-color: #4d4b58;
       height: max-content;
       width: max-content;
       list-style: none;
       color: #999;
       border-radius: 5px;
-    }
+    } */
   </style>
   <body>
     <section class="container-fluid">
@@ -78,13 +78,9 @@
                       type="text"
                       class="form-control p-2"
                       id="first-name"
-                      value=" Abhishek"
+                      placeholder=" Abhishek"
                       required
-                      style="
-                        background-color: #141414;
-                        color: #999;
-                        border-color: #262626;
-                      " />
+                      />
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
@@ -94,13 +90,9 @@
                       type="text"
                       class="form-control p-2"
                       id="last-name"
-                      value=" Sharma"
+                      placeholder=" Sharma"
                       required
-                      style="
-                        background-color: #141414;
-                        color: #999;
-                        border-color: #262626;
-                      " />
+                     />
                   </div>
                 </div>
               </div>
@@ -112,13 +104,9 @@
                       type="email"
                       class="form-control p-2"
                       id="email"
-                      value=" example@gmail.com "
+                      placeholder=" example@gmail.com "
                       required
-                      style="
-                        background-color: #141414;
-                        color: #999;
-                        border-color: #262626;
-                      " />
+                     />
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
@@ -133,7 +121,8 @@
                           <span class="iconify" data-icon="flag:gb-4x3"></span>
 
                         </div>
-                        <input type="tel" name="tel" placeholder="Phone Number" class="p-2">
+                        <input type="tel" name="tel" placeholder="Phone Number"
+                          class="p-2">
                       </div>
                       <div class="options">
                         <input type="text" class="search-box"
@@ -154,10 +143,10 @@
                     class="form-control"
                     id="Textarea"
                     rows="3"
-                    placeholder
+                    placeholder=""
                     style="
-                      background-color: #141414;
-                      color: #999;
+                      background-color: transparent;
+                      color: #eee;
                       border-color: #262626;
                     "></textarea>
                 </div>
@@ -168,9 +157,9 @@
                     <input
                       class="form-check-input"
                       type="checkbox"
-                      value
+                      placeholder
                       id="flexCheckDefault"
-                      style="background-color: #141414; border-color: #262626" />
+                      style="background-color: transparent; border-color: #262626" />
                     <label
                       class="form-check-label"
                       for="flexCheckDefault"
@@ -182,6 +171,7 @@
                 <div
                   class="col-12 col-sm-6 text-center text-sm-end mt-3 mt-sm-0">
                   <button
+                  type="submit"
                     class="border-0 px-3 py-2 text-white fw-500 rounded-2"
                     style="
                       background: linear-gradient(
