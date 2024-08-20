@@ -390,7 +390,6 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-
 /*  custom scrollbar  */
 
 ::-webkit-scrollbar {
@@ -479,7 +478,6 @@ img {
 
 /* form phone no. */
 
-
 .select-box {
   position: relative;
 }
@@ -489,7 +487,7 @@ img {
   /* padding: 1rem 0.6rem */
   /* font-size: 1.1rem; */
   border: none;
-  border-left: 0.1rem solid #262626 ;
+  border-left: 0.1rem solid #262626;
   background: none;
   outline: none;
   color: #eee;
@@ -544,7 +542,7 @@ input[type="tel"] {
   top: 4rem;
 
   width: 100%;
-  background-color:#141414;
+  background-color: #141414;
   border: 1px solid #262626;
   border-radius: 0.5rem;
 
