@@ -55,7 +55,7 @@ for (let i = 0; i < 10; i++) {
             <li class="d-flex gap-1 align-items-center">
               <img
                 src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/clock-stroke.svg"
-                alt="Duration" width="16" />
+                alt="Duration" width="16"  />
               <span style="color: #999">03h 10m</span>
             </li>
             <li class="d-flex gap-1 align-items-center">

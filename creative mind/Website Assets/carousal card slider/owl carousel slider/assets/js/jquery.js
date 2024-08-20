@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $(".sliderOne").owlCarousel({
+  $(".owl-carousel.sliderOne").owlCarousel({
     loop: true,
-
-    dots:true,
+    margin: 10,
+    dots: true,
     autoplay: true,
     responsiveClass: true,
     responsive: {
@@ -16,11 +16,6 @@ $(document).ready(function () {
       },
       1000: {
         items: 4,
-        nav: true,
-        loop: false,
-      },
-      1030: {
-        items: 5,
         nav: true,
         loop: false,
       },
