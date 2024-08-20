@@ -43,5 +43,5 @@ for (let i = 0; i < 3; i++) {
         </div>
 `;
 
-  cardSlider.append(cardSliderElement[i]);
+cardSlider.append(cardSliderElement[i]);
 }

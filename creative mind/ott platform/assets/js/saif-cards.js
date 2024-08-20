@@ -1,6 +1,6 @@
 const card = document.querySelector("#tt");
 let cardElement = [];
-for (let i = 0; i < 10; i++) {
+for  (let i = 0; i < 10; i++) {
   cardElement[i] = document.createElement("div");
   cardElement[i].classList.add("carousel-item", "item-category");
   cardElement[i].innerHTML = `
@@ -20,6 +20,7 @@ for (let i = 0; i < 10; i++) {
             height: 80px;
             width: 80px;
             cursor: pointer;
+            
           ">
         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 29" fill="none"
           style="margin-left: 7.5px">

@@ -529,8 +529,8 @@ input[type="tel"] {
 
   width: 0.8rem;
   height: 0.8rem;
-  border-right: 0.12rem solid #262626;
-  border-bottom: 0.12rem solid #262626;
+  border-right: 0.12rem solid #eee;
+  border-bottom: 0.12rem solid #eee;
 
   transition: 0.2s;
 }
