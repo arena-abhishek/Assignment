@@ -73,9 +73,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".sliderOne").owlCarousel({
     loop: true,
-    // slideTransition: ``,
-    // slideBy: 1,
-    dots:true,
+    margin: 10,
+    dots: true,
     autoplay: true,
     responsiveClass: true,
     responsive: {
@@ -84,22 +83,24 @@ $(document).ready(function () {
         nav: true,
       },
       600: {
-        items: 3,
+        items: 2,
         nav: false,
+        margin:5,
       },
       1000: {
-        items: 4,
+        items: 3,
         nav: true,
         loop: false,
       },
       1030: {
-        items: 5,
+        items: 4,
         nav: true,
         loop: false,
       },
     },
   });
 });
+
 
 /* hero section slider */
 $(document).ready(function () {

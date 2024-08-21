@@ -1,5 +1,7 @@
+
+
 $(document).ready(function () {
-  $(".owl-carousel.sliderOne").owlCarousel({
+  $(".sliderOne").owlCarousel({
     loop: true,
     margin: 10,
     dots: true,
@@ -28,3 +30,5 @@ $(document).ready(function () {
     },
   });
 });
+
+

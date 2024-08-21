@@ -49,15 +49,6 @@ li {
   margin-top: 150px;
 }
 
-/*
-@media (max-width:991px ) {
-  .sidebar{
-    background-color: #15141f;
-    backdrop-filter: blur;
-  }
-  
-} 
- */
 
 /* header*/
 .header {
@@ -72,9 +63,7 @@ li {
 .fleekNav a:hover {
   background-color: #1a1a1a;
 }
-/* .fleekNavBorder {
-  position: relative;
-} */
+
 .navItems.active {
   background-color: #1a1a1a;
 }
@@ -175,17 +164,11 @@ img {
 .fqs {
   display: none;
 }
-/* .fqsHead {
-  display: block;
-} */
 
 /* support */
 .supp {
   margin-top: 50px;
 }
-/* .suppFaq {
-  margin-top: 150px;
-} */
 
 /* movies & shows hero section */
 
@@ -207,7 +190,7 @@ img {
   z-index: 1;
 }
 
-.carousel-caption-container {
+/* .carousel-caption-container {
   position: relative;
   z-index: 2;
 }
@@ -222,7 +205,7 @@ img {
 
 .carousel-fade .carousel-item:not(.active) {
   opacity: 0;
-}
+} */
 
 /* movie and show details */
 .showsDetail {
@@ -257,11 +240,11 @@ img {
 
 /* card carousel card slider */
 
-.carousel-inner-category {
+/* .carousel-inner-category {
   padding: 0 0;
 }
 .card {
-  margin: 0 10px; /* add some margin to the cards */
+  margin: 0 10px; 
 }
 
 .carousel-control-prev,
@@ -272,9 +255,9 @@ img {
   top: 50%;
   transform: translateY(-50%);
   background-color: #0f0f0f;
-}
+} */
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* @media (min-width: 576px) and (max-width: 767.98px) {
   .item-category {
     width: 50%;
   }
@@ -297,7 +280,7 @@ img {
     width: 33.3333%;
     margin-left: 10px;
     margin-right: 0;
-    /* flex: 0 0 33.333333%; */
+    flex: 0 0 33.333333%;
     display: block;
   }
   .carousel-inner-category {
@@ -311,10 +294,10 @@ img {
 @media (max-width: 430px) {
   .card-wrapper {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
   }
-}
+} */
 
 .card-hover {
   position: absolute;
