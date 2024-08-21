@@ -11,10 +11,16 @@ $(document).ready(function () {
         nav: true,
       },
       600: {
-        items: 3,
+        items: 2,
         nav: false,
+        margin:5,
       },
       1000: {
+        items: 3,
+        nav: true,
+        loop: false,
+      },
+      1030: {
         items: 4,
         nav: true,
         loop: false,

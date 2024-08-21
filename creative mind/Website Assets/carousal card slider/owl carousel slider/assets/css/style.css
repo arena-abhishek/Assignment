@@ -1,5 +1,5 @@
 html {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -37,9 +37,9 @@ li {
   width: 65px;
   cursor: pointer;
 }
-.play-icon{
+.play-icon {
   font-size: 38px;
-  margin-left:6px;
+  margin-left: 6px;
 }
 
 .card:hover .video-play-btn {
@@ -61,6 +61,8 @@ li {
   animation: slide-top 0.5s ease-in-out;
 }
 
+
+
 @keyframes slide-top {
   0% {
     transform: translateY(20%);
@@ -70,8 +72,8 @@ li {
   }
 }
 
-.movie-title{
-  color:#fff;
+.movie-title {
+  color: #fff;
 }
 
 .movie-title:hover {
@@ -84,7 +86,7 @@ li {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transition: 0.2s ease-in-out ;
+  transition: 0.2s ease-in-out;
 }
 
 /* .sliderOne{

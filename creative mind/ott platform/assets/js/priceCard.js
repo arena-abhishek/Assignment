@@ -2,50 +2,71 @@ const priceCard = document.querySelector("#pricecard");
 let priceCardElement = [];
 
 function getCardTitle(i) {
-  if (i === 0) {
-    return "Basic Plan";
-  } else if (i === 1) {
-    return "Premium Plan";
-  } else if (i === 2) {
-    return "Elite Plan";
-  } else {
-    return "";
+  switch (i) {
+    case 0:
+      return "Basic Plan";
+
+    case 1:
+      return "Premium Plan";
+
+    case 2:
+      return "Elite Plan";
+
+    default:
+      return "";
   }
 }
 
 function getCardText(i) {
-  if (i === 0) {
-    return "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.";
-  } else if (i === 1) {
-    return "Get access to exclusive content, including original series and movies, plus additional features like offline viewing.";
-  } else if (i === 2) {
-    return "Experience the ultimate in entertainment with our elite plan, featuring 4K streaming, Dolby Atmos, and more.";
-  } else {
-    return "";
+  switch (i) {
+    case 0:
+      return "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.";
+
+    case 1:
+      return "Get access to exclusive content, including original series and movies, plus additional features like offline viewing.";
+
+    case 2:
+      return "Experience the ultimate in entertainment with our elite plan, featuring 4K streaming, Dolby Atmos, and more.";
+
+    default:
+      return "";
   }
 }
 
 function getCardPrice(i, period) {
-  if (period === "monthly") {
-    if (i === 0) {
-      return "99";
-    } else if (i === 1) {
-      return "149";
-    } else if (i === 2) {
-      return "249";
-    } else {
+  switch (period) {
+    case "monthly":
+      switch (i) {
+        case 0:
+          return "99";
+
+        case 1:
+          return "149";
+
+        case 2:
+          return "249";
+
+        default:
+          return "";
+      }
+
+    case "yearly":
+      switch (i) {
+        case 0:
+          return "999";
+
+        case 1:
+          return "1599";
+
+        case 2:
+          return "2999";
+
+        default:
+          return "";
+      }
+
+    default:
       return "";
-    }
-  } else if (period === "yearly") {
-    if (i === 0) {
-      return "999";
-    } else if (i === 1) {
-      return "1599";
-    } else if (i === 2) {
-      return "2999";
-    } else {
-      return "";
-    }
   }
 }
 
@@ -98,17 +119,12 @@ for (let i = 0; i < 3; i++) {
                     <div class="col">
                       <a
                         href="#"
-                        class="py-2 px-3 rounded"
+                        class="py-2 px-3 btn-base rounded"
                         type="button"
                         style="
                           text-decoration: none;
                           color: #fff;
-                          background: linear-gradient(
-                            92deg,
-                            rgba(90, 13, 255, 1) 0%,
-                            rgba(255, 41, 221, 1) 37%,
-                            rgba(255, 88, 28, 1) 92%
-                          );
+                    
                         "
                         >Choose Plan</a
                       >

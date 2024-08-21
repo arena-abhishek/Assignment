@@ -4,46 +4,47 @@ let faqElement = [];
 let faqElement2 = [];
 
 function getFaqTitle(i) {
-  if (i === 0) {
-    return "What is Fleek?";
-  } else if (i === 1) {
-    return "Premium Plan";
-  } else if (i === 2) {
-    return "Elite Plan";
-  } else if (i === 3) {
-    return "Elite Plan";
-  } else if (i === 4) {
-    return "Elite Plan";
-  } else if (i === 5) {
-    return "Elite Plan";
-  } else if (i === 6) {
-    return "Elite Plan";
-  } else if (i === 7) {
-    return "Elite Plan";
-  } else if (i === 8) {
-    return "Elite Plan";
-  } else if (i === 9) {
-    return "Elite Plan";
-  } else if (i === 10) {
-    return "Elite Plan";
-  } else if (i === 11) {
-    return "Elite Plan";
-  } else if (i === 12) {
-    return "Elite Plan";
-  } else {
-    return "";
+  switch (i) {
+    case 1:
+      return "What is Fleek?";
+
+    case 2:
+      return "How much does Fleek cost";
+    case 3:
+      return "What content is available on Fleek";
+    case 4:
+      return "How can i watch Fleek";
+    case 5:
+      return "How do I sign up for Fleek ";
+    case 6:
+      return "what is the Fleek free trial cost";
+    case 7:
+      return "What content is available on Fleek";
+    case 8:
+      return "How do I cancel my Fleek subscription";
+      case 9:
+        return "How do I contact Fleek customer support";
+        case 10:
+          return "What are the Fleek payment method";
+
+    default:
+      return "Elite ";
   }
 }
 
 function getFaqText(i) {
-  if (i === 0) {
-    return "Fleek is a streaming service that allows you to watch movies and shows on demand.";
-  } else if (i === 1) {
-    return "Get access to exclusive content, including original series and movies, plus additional features like offline viewing.";
-  } else if (i === 2) {
-    return "Experience the ultimate in entertainment with our elite plan, featuring 4K streaming, Dolby Atmos, and more.";
-  } else {
-    return "";
+  switch (i) {
+    case 0:
+      return "Fleek is a streaming service that allows you to watch movies and shows on demand.";
+
+    case 1:
+      return "Get access to exclusive content, including original series and movies, plus additional features like offline viewing.";
+
+    case 2:
+      return "Experience the ultimate in entertainment with our elite plan, featuring 4K streaming, Dolby Atmos, and more.";
+
+    default:
+      return "Experience the ultimate in entertainment with our elite plan, featuring 4K streaming, Dolby Atmos, and more.";
   }
 }
 
@@ -53,7 +54,7 @@ for (let i = 1; i < 11; i++) {
   faqElement.innerHTML = ` <!-- number -->
               <div class="col-2">
                 <span
-                  class="text-white rounded-2 p-2"
+                  class="text-white rounded-2 py-2 px-3"
                  style="background-color: #1f1f1f"
                   >${i}</span
                 >

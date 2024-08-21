@@ -49,19 +49,19 @@ for (let i = 0; i < 10; i++) {
             <li class="d-flex gap-1 align-items-center">
               <img
                 src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/star-stroke.svg"
-                alt="Rating" width="16" />
+                alt="Rating" style="width:16px; height:16px;" />
               <span style="color: #999">9.1</span>
             </li>
             <li class="d-flex gap-1 align-items-center">
               <img
                 src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/clock-stroke.svg"
-                alt="Duration" width="16"  />
+                alt="Duration" style="width:16px; height:16px;"  />
               <span style="color: #999">03h 10m</span>
             </li>
             <li class="d-flex gap-1 align-items-center">
               <img
                 src="https://holaa.codexshaper.com/wp/wp-content/themes/holaa/assets/images/icons/4k-stroke.svg"
-                alt="Quality" width="16" />
+                alt="Quality" style="width:16px; height:16px;" />
               <span style="color: #999">4k Quality</span>
             </li>
           </ul>
@@ -79,6 +79,3 @@ for (let i = 0; i < 10; i++) {
 
   card.append(cardElement[i]);
 }
-
-
-
