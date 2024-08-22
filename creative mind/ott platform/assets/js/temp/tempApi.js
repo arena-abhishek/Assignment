@@ -1,19 +1,37 @@
-const APIURL =
+/* show movies */
+const MOVIE_URL =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
- 
-const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCHAPI =
-  "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
-const cards = document.querySelectorAll(".tt");
-console.log(cards);
-const getMovies = async (url) => {
+
+const UPCOMING_API =
+  "https://api.themoviedb.org/3/movie/upcoming?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const TRENDING_API =
+  "https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const TOP_RATED_API =
+  "https://api.themoviedb.org/3/movie/top_rated?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+/* show series */
+const TV_API =
+  "https://api.themoviedb.org/3/tv/popular?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const UPCOMING_TV_API =
+  "https://api.themoviedb.org/3/tv/airing_today?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const TRENDING_TV_API =
+  "https://api.themoviedb.org/3/trending/tv/day?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const TOP_RATED_TV_API =
+  "https://api.themoviedb.org/3/tv/top_rated?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+const getMedia = async (url, containerSelector, isTV) => {
   const response = await fetch(url);
   const data = await response.json();
-  showMovies(data);
+  showMedia(data, containerSelector, isTV);
 };
-getMovies(APIURL);
 
-const showMovies = (data) => {
+const showMedia = (data, containerSelector, isTV) => {
+  const cards = document.querySelectorAll(containerSelector);
   cards.forEach((card) => {
     card.innerHTML = "";
     data.results.forEach((result) => {
@@ -61,7 +79,7 @@ const showMovies = (data) => {
               ">
             <div class="row">
               <h4 class="movie-title card-title text-uppercase fw-bold h4">
-                ${result.original_title}
+                   ${isTV ? result.original_name : result.original_title}
               </h4>
             </div>
             <div class="row">
@@ -96,7 +114,18 @@ const showMovies = (data) => {
       </div>
     </div>
     `;
+
       card.appendChild(cardElement);
     });
   });
 };
+
+getMedia(MOVIE_URL, ".tt", false); // popular movies
+getMedia(TRENDING_API, ".trending-cards", false); // trending movies
+getMedia(TOP_RATED_API, ".top-rated-cards", false); // must watch movies
+getMedia(UPCOMING_API, ".upcoming-cards", false); // new release
+
+getMedia(TV_API, ".tv", true); // popular TV shows
+getMedia(TRENDING_TV_API, ".trending-tv-cards", true); // trending TV shows
+getMedia(TOP_RATED_TV_API, ".top-rated-tv-cards", true); // must watch TV shows
+getMedia(UPCOMING_TV_API, ".upcoming-tv-cards", true); // new TV releases

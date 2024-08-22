@@ -1,8 +1,8 @@
 const APIURL =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+  "https://api.themoviedb.org/3/trending/all/day?language=en-US&api_key=04c35731a5ee918f014970082a0088b1&page=1";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI =
-  "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+  "https://api.themoviedb.org/3/search/multi?include_adult=false&language=en-US&api_key=04c35731a5ee918f014970082a0088b1&query=";
 const moiveBox = document.querySelector("#movie-box");
 console.log(moiveBox);
 const getMovies = async (url) => {
@@ -79,7 +79,13 @@ const showMovies = (data) => {
         >
           <div class="row">
             <h4 class="movie-title card-title text-uppercase fw-bold h5">
-            ${result.original_title}
+            ${
+              result.original_title
+                ? result.original_title
+                : result.original_name
+                ? result.original_name
+                : "Unknown Title"
+            }
             </h4>
           </div>
           <div class="row">
