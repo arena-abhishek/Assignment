@@ -30,7 +30,7 @@ let content1 = `
           class="col-6 col-md-6 col-lg-2 d-flex justify-content-center justify-content-sm-start align-content-center">
           <!-- logo -->
           <a class="navbar-brand" href="#"><img
-              src="/assets/img/logo.png"
+              src="assets/img/logo.png"
               alt="logo"
               width="114" height="114" />
    
@@ -46,23 +46,23 @@ let content1 = `
                   <a
                     class="h4 nav-link py-3 px-4 rounded d-inline-block "
                     aria-current="page"
-                    href="/index.html">Home</a>
+                    href="index.html">Home</a>
                 </li>
                 <li class="nav-item navItems rounded ">
                   <a
                     class="h4 nav-link py-3 px-4 rounded"
-                    href="/movies&shows.html">Movies <span>&</span>
+                    href="movies&shows.html">Movies <span>&</span>
                     Shows</a>
                 </li>
                 <li class="nav-item navItems rounded  ">
                   <a
                     class="h4 nav-link py-3 px-4 rounded"
-                    href="/support.html  ">Support</a>
+                    href="support.html  ">Support</a>
                 </li>
                 <li class="nav-item navItems rounded  ">
                   <a
                     class="h4 nav-link py-3 px-4 rounded"
-                    href="/subscription.html">Subscription</a>
+                    href="subscription.html">Subscription</a>
                 </li>
               </ul>
             </div>
@@ -115,7 +115,7 @@ let content1 = `
           <!-- sidebar header -->
           <div class="offcanvas-header text-white p-2">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="/assets/img/logo.png" alt="logo" width="114" height="114" />
+              <img src="assets/img/logo.png" alt="logo" width="114" height="114" />
             </h5>
   
             <button
@@ -142,16 +142,16 @@ let content1 = `
               class="navbar-nav d-block d-lg-none fs-5 flex-grow-1 pe-3 rounded">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page"
-                  href="/index.html">Home</a>
+                  href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/movies&shows.html">Movies</a>
+                <a class="nav-link" href="movies&shows.html">Movies</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/support.html">Support</a>
+                <a class="nav-link" href="support.html">Support</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/subscription.html">Subscription</a>
+                <a class="nav-link" href="subscription.html">Subscription</a>
               </li>
             </ul>
           </div>
