@@ -32,7 +32,7 @@ body {
 .fleekNavBorder {
   position: relative;
 }
-.navItems::active {
+.navItems:active{
   background-color: #1a1a1a;
 }
 

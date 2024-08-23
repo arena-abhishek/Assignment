@@ -29,47 +29,40 @@ $(document).ready(function () {
 /* movies and shows hero section touch swiping */
 
 /* navigation bar  */
-$(document).ready(function () {
+/* $(document).ready(function () {
   $(".navItems").click(function () {
     $(".navItems").removeClass("active");
     $(this).addClass("active");
   });
-});
-
-/* carousel card slider */
+}); */
 
 $(document).ready(function () {
-  var multipleCardCarousel = document.querySelector("#carouselCardsControls");
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-      interval: false,
-    });
-    var carouselWidth = $(".carousel-inner-category")[0].scrollWidth;
-    var cardWidth = $(".carousel-item").width();
-    var scrollPosition = 0;
-    $("#carouselCardsControls .carousel-control-next").on("click", function () {
-      if (scrollPosition < carouselWidth - cardWidth * 4) {
-        scrollPosition += cardWidth;
-        $("#carouselCardsControls .carousel-inner-category").animate(
-          { scrollLeft: scrollPosition },
-          600
-        );
-      }
-    });
-    $("#carouselCardsControls .carousel-control-prev").on("click", function () {
-      if (scrollPosition > 0) {
-        scrollPosition -= cardWidth;
-        $("#carouselCardsControls .carousel-inner-category").animate(
-          { scrollLeft: scrollPosition },
-          600
-        );
-      }
-    });
-  } else {
-    $(multipleCardCarousel).addClass("slide");
+  var currentPage = window.location.pathname;
+  var backgroundColor;
+  switch (currentPage) {
+    case "/subscription.html":
+      backgroundColor = "#1a1a1a";
+      break;
+    case "/home.html":
+      backgroundColor = "#1a1a1a";
+      break;
+    case "/movies&shows.html":
+      backgroundColor = "#1a1a1a";
+      break;
+
+    case "/support.html":
+      backgroundColor = "#1a1a1a";
+
+      break;
+
+    default:
+      backgroundColor = "none";
   }
+
+  $("body").css("background-color", backgroundColor);
 });
 
+/* category slider */
 $(document).ready(function () {
   $(".sliderOne").owlCarousel({
     loop: true,
@@ -85,7 +78,7 @@ $(document).ready(function () {
       600: {
         items: 2,
         nav: false,
-        margin:5,
+        margin: 5,
       },
       1000: {
         items: 3,
@@ -100,7 +93,6 @@ $(document).ready(function () {
     },
   });
 });
-
 
 /* hero section slider */
 $(document).ready(function () {

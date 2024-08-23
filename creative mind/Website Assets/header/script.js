@@ -216,3 +216,29 @@ document
       getMovies(APIURL);
     }
   });
+
+$(document).ready(function () {
+  var currentPage = window.location.pathname;
+  var backgroundColor;
+  switch (currentPage) {
+    case "/subscription.html":
+      backgroundColor = "#1a1a1a";
+      break;
+    case "/home.html":
+      backgroundColor = "#1a1a1a";
+      break;
+    case "/movies&shows.html":
+      backgroundColor = "#1a1a1a";
+      break;
+
+    case "/support.html":
+      backgroundColor = "#1a1a1a";
+
+      break;
+
+    default:
+      backgroundColor = "none";
+  }
+
+  $("body").css("background-color", backgroundColor);
+});
